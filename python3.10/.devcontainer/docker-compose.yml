@@ -1,0 +1,11 @@
+version: '3'
+services:
+  python3.10:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 'python3.10'
+    working_dir: '/working_dir'
+    tty: true
+    volumes:
+      - .:/working_dir
